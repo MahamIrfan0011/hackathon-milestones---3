@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Resume Form</h1>
+    </header>
+
+    <form id="resume-form">
+        <!-- Profile Picture Upload -->
+        <section>
+            <h2>Profile Picture</h2>
+            <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+            <img id="profile-pic-preview" class="profile-pic" style="display: none;" alt="Profile Picture">
+        </section>
+
+        <!-- Personal Information -->
+        <section>
+            <h2>Personal Information</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Number:</label>
+                <input type="tel" id="contact" name="contact" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Gmail:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+            <label for="education">Education Details:</label>
+            <textarea id="education" name="education" placeholder="Enter your education details" required></textarea>
+        </section>
+
+        <!-- Skills -->
+        <section>
+            <h2>Skills</h2>
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" name="skills" placeholder="Enter your skills (comma separated)" required>
+            <button type="button" id="toggle-skills">Toggle Skills</button>
+            <div id="skills-info">
+                <!-- Skills information will be displayed here -->
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2>Experience</h2>
+            <label for="experience">Experience Details:</label>
+            <textarea id="experience" name="experience" placeholder="Enter your experience details"></textarea>
+        </section>
+
+        <!-- Submit Button -->
+        <section>
+            <button type="submit">Submit</button>
+        </section>
+    </form>
+
+    <!-- Bubbles Background -->
+    <div class="bubbles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Add the script.js file here -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Resume</h1>
+    </header>
+
+    <!-- Display the data from the form submission -->
+    <section>
+        <h2>Personal Information</h2>
+        <p><strong>Name:</strong> <span id="display-name"></span></p>
+        <p><strong>Number:</strong> <span id="display-contact"></span></p>
+        <p><strong>Gmail:</strong> <span id="display-email"></span></p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <p id="display-education"></p>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <p id="display-skills"></p>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+        <p id="display-experience"></p>
+    </section>
+
+    <!-- Profile Picture -->
+    <section>
+        <h2>Profile Picture</h2>
+        <img id="display-profile-pic" style="display: none;" alt="Profile Picture">
+    </section>
+
+    <!-- Include the compiled TypeScript file -->
+    <script src="resume.js"></script> <!-- Your compiled TypeScript file -->
+</body>
+</html>
+
+
+
